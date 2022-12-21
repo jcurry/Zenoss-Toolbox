@@ -9,11 +9,13 @@ zenoss_toolbox_2.0.0.zip and zenoss_toolbox_2.0.3.zip explicitly uploaded
 
 On a Zenoss 4.2.5 (I also have SUP 743 installed) there is no python library module called zodbpickle.
 zenoss_toolbox_2.0.0, in zodbscan.py, does an import of:
+
 from pickle import Unpickler as UnpicklerBase
 
 and pickle.py can be found in /opt/zenoss/lib/python2.7 and includes the Unpickler method.
 
 However, toolbox 2.0.3, in zodbscan.py, imports:
+
 from zodbpickle.pickle import Unpickler as UnpicklerBase
 
 and there is no zodbpickle module so you get an import failure when you try to run zodbscan.
@@ -33,13 +35,6 @@ Installing export4 script to /opt/zenoss/bin
 Installing zencheckdbstats script to /opt/zenoss/bin
 Installing zencatalogscan script to /opt/zenoss/bin
 Installing use_scsi script to /opt/zenoss/bin
-
-
-zodbscan then runs fine.
-
-Jane Curry
-jane.curry@skills-1st.co.uk
-December 21st, 2022
 Installing findposkeyerror script to /opt/zenoss/bin
 Installing validate4import script to /opt/zenoss/bin
 Installing zennetworkclean script to /opt/zenoss/bin
@@ -47,4 +42,12 @@ Installing zennetworkclean script to /opt/zenoss/bin
 Installed /opt/zenoss/lib/python2.7/site-packages/zenoss.toolbox-2.0.0-py2.7.egg
 Processing dependencies for zenoss.toolbox==2.0.0
 Finished processing dependencies for zenoss.toolbox==2.0.0
+
+
+
+zodbscan then runs fine.
+
+Jane Curry
+jane.curry@skills-1st.co.uk
+December 21st, 2022
 
