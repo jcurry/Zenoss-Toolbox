@@ -23,7 +23,7 @@ and there is no zodbpickle module so you get an import failure when you try to r
 If you have this issue, you should be able to install the older 2.0.0 version of the toolbox
 and it will replace the newer 2.0.3.
 
---
+```
 [zenoss@zen42 local]$ easy_install zenoss_toolbox_2.0.0.zip
 Processing zenoss_toolbox_2.0.0.zip
 Running zenoss.toolbox-master/setup.py -q bdist_egg --dist-dir /tmp/easy_install-THpezi/zenoss.toolbox-master/egg-dist-tmp-Oyl7LK
@@ -44,7 +44,7 @@ Installed /opt/zenoss/lib/python2.7/site-packages/zenoss.toolbox-2.0.0-py2.7.egg
 Processing dependencies for zenoss.toolbox==2.0.0
 Finished processing dependencies for zenoss.toolbox==2.0.0
 
---
+```
 
 zodbscan then runs fine.
 
