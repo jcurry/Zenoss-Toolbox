@@ -21,7 +21,8 @@ from zodbpickle.pickle import Unpickler as UnpicklerBase
 and there is no zodbpickle module so you get an import failure when you try to run zodbscan.
 
 If you have this issue, you should be able to install the older 2.0.0 version of the toolbox
-and it will replace the newer 2.0.3.
+and it will replace the newer 2.0.3. However, I would strongly suggest that you have a backup position
+before doing this - I have only tested the procedure lightly.
 
 ```
 [zenoss@zen42 local]$ easy_install zenoss_toolbox_2.0.0.zip
